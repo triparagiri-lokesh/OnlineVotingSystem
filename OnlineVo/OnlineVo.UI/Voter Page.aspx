@@ -3,13 +3,13 @@
     <br />
     <table align="center" style="width: 39%">
         <tr>
-            <td class="modal-sm" style="height: 24px; width: 237px;">
+            <td class="modal-sm" style="height: 24px; width: 417px;">
                 <asp:LinkButton ID="CandidateList_Button" runat="server" OnClick="CandidateList_Button_Click">CandidateList </asp:LinkButton>
             </td>
-            <td style="height: 24px; width: 180px;">
+            <td style="height: 24px; width: 222px;">
                 <asp:LinkButton ID="Vote_Button" runat="server" OnClick="Vote_Button_Click">Vote</asp:LinkButton>
             </td>
-            <td style="height: 24px;width:400px">
+            <td style="height: 24px;width:335px">
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
             </td>

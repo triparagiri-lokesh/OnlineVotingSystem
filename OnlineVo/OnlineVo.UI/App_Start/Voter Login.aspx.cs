@@ -34,7 +34,7 @@ namespace OnlineVo.UI.App_Start
             
             if(dt.Rows.Count > 0)
             {
-                Response.Redirect("Voter Page.aspx");
+                Response.Redirect("~/Voter Page.aspx");
                 
             }
             else

@@ -25,7 +25,7 @@ namespace OnlineVo.UI.App_Start
             string APassword = txtApassword.Text;
             if((AUname=="Lokesh" && APassword == "12345") || (AUname=="Sai" && APassword=="67890"))
             {
-                Response.Redirect("http://localhost:59839/Admin%20Page");
+                Response.Redirect("~/Admin Page");
             }
             else
             {

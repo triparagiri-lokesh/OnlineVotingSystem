@@ -37,12 +37,14 @@ namespace OnlineVo.UI
                     break;
                 }
             }
-            lblmsg.Text = "Your Vote is done sucessfullly of Candidate no" + myvote;
+            lblmsg.Text = "Your Vote is done sucessfullly of Candidate no " + myvote;
             
 
         }
 
-
-
+        protected void Logoutlbutton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
     }
 }

@@ -141,7 +141,6 @@
     <Content Include="images\General-Election-piece.png" />
     <Content Include="images\indian-election-clipart-13.jpg" />
     <Content Include="images\introduction.jpg" />
-    <Content Include="Result.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -270,13 +269,6 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Result.aspx.cs">
-      <DependentUpon>Result.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Result.aspx.designer.cs">
-      <DependentUpon>Result.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
