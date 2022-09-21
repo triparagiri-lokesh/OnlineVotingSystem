@@ -15,31 +15,31 @@ namespace OnlineVo.UI
     {
 
         /// <summary>
-        /// Logoutlbutton control.
+        /// LogoutVlinkbutton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Logoutlbutton;
+        protected global::System.Web.UI.WebControls.LinkButton LogoutVlinkbutton;
 
         /// <summary>
-        /// Voteradiobutton control.
+        /// RadioButtonList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Voteradiobutton;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// Requiredfieldvalidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requiredfieldvalidator;
 
         /// <summary>
         /// SqlDataSource1 control.

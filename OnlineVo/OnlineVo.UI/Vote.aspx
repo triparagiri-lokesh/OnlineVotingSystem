@@ -1,40 +1,37 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Vote.aspx.cs" Inherits="OnlineVo.UI.Vote1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    
-
-    <table align="center" style="width: 50%">
-        <tr style="background-color: #FF3300">
-            <td style="color: #000080; background-color: #FFFF99; font-size: small; visibility: visible;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cast Your Vote&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:LinkButton ID="Logoutlbutton" runat="server" OnClick="Logoutlbutton_Click">Logout</asp:LinkButton>
-                <br />
-                <table class="nav-justified">
-                    <tr>
-                        <td style="height: 117px; border-collapse: separate; background-color: #99CC00;">&nbsp;&nbsp;&nbsp;&nbsp; Candidate No</td>
-                        <td align="left" style="height: 117px; border-collapse: separate; background-color: #99CC00;">
-                            <asp:RadioButtonList ID="Voteradiobutton" runat="server" DataSourceID="SqlDataSource1" DataTextField="Candidate_no" DataValueField="Candidate_no">
-                                
-                            </asp:RadioButtonList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Voteradiobutton" ErrorMessage="pls select Candidate No"></asp:RequiredFieldValidator>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Onlinevotingconn %>" SelectCommand="SELECT [Candidate_no] FROM [Candidate]"></asp:SqlDataSource>
-                        </td>
-                    </tr>
-                </table>
+    <table align="center" style="width: 50%; border: 1px solid #D43F3A; background-color: #ADADAD">
+        <tr>
+            <td align="center" style="width: 354px">Cast Your Vote</td>
+            <td align="right">
+                <asp:LinkButton ID="LogoutVlinkbutton" runat="server" OnClick="LogoutVlinkbutton_Click">Logout</asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="width: 354px">Candidate No</td>
+            <td>
+                <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Candidate_no" DataValueField="Candidate_name">
+                </asp:RadioButtonList>
+                <asp:RequiredFieldValidator ID="Requiredfieldvalidator" runat="server" ControlToValidate="RadioButtonList1" ErrorMessage="pls enter Candidate No"></asp:RequiredFieldValidator>
                 <br />
                 <br />
-               
-               
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               
-               
-                <asp:Button ID="Votebutton" runat="server" BackColor="#FF9900" OnClick="Votebutton_Click" Text="Vote" />
-                <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Onlinevotingconn %>" SelectCommand="SELECT [Candidate_no], [Candidate_name], [Party_name] FROM [Candidate]"></asp:SqlDataSource>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 354px">&nbsp;</td>
+            <td>
+                <asp:Button ID="Votebutton" runat="server" OnClick="Votebutton_Click1" Text="Vote" BackColor="#009933" style="height: 26px" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center"colspan="2">
                 <asp:Label ID="lblmsg" runat="server"></asp:Label>
-                <br />
-                <br />
-                <br />
             </td>
         </tr>
     </table>
-</asp:Content>
+    <br />
+    
+
+    </asp:Content>

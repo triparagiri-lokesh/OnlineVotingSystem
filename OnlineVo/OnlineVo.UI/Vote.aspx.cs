@@ -26,20 +26,13 @@ namespace OnlineVo.UI
            
         }
 
-
-        protected void Votebutton_Click(object sender, EventArgs e)
+        protected void Votebutton_Click1(object sender, EventArgs e)
         {
             Votebutton.Enabled = false;
             lblmsg.Text = "Your Vote is Done Sucessfully";
         }
-        
-   
 
-           
-
-        
-
-        protected void Logoutlbutton_Click(object sender, EventArgs e)
+        protected void LogoutVlinkbutton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Home.aspx");
         }
