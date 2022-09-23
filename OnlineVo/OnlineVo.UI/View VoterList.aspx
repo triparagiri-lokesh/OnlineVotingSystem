@@ -4,7 +4,7 @@
     
     <table align="center" class="nav-justified">
         <tr align="center">
-            <td> View Voter List <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="VoterId" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+            <td> View Voter List <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="VoterId" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="324px" style="margin-bottom: 3px" Width="763px">
                 <Columns>
                     <asp:BoundField DataField="VoterId" HeaderText="VoterId" ReadOnly="True" SortExpression="VoterId" />
                     <asp:BoundField DataField="VoterName" HeaderText="VoterName" SortExpression="VoterName" />
@@ -20,13 +20,13 @@
                 <EmptyDataTemplate>
                     <asp:CheckBox ID="txtapprove" runat="server" Checked='True' Text="Approved" />
                 </EmptyDataTemplate>
-                <FooterStyle BackColor="White" ForeColor="#000066" />
-                <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                <RowStyle ForeColor="#000066" />
+                <FooterStyle BackColor="White" ForeColor="#000066"/>
+                <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White"/>
+                <PagerStyle BackColor="White" ForeColor="#000066" />
+                <RowStyle ForeColor="#000066" HorizontalAlign="Center"/>
                 <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
                 <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                <SortedAscendingHeaderStyle BackColor="#007DBB"/>
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
                 <SortedDescendingHeaderStyle BackColor="#00547E" />
                 </asp:GridView>

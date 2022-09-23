@@ -108,9 +108,9 @@
     <Content Include="About.aspx" />
     <Content Include="AddCandidate.aspx" />
     <Content Include="Admin Page.aspx" />
-    <Content Include="App_Start\Admin Login.aspx" />
-    <Content Include="App_Start\Voter Login.aspx" />
-    <Content Include="App_Start\Voter SignUp.aspx" />
+    <Content Include="Admin Login.aspx" />
+    <Content Include="Voter Login.aspx" />
+    <Content Include="Voter SignUp.aspx" />
     <Content Include="CandidateList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -121,8 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GetCandidates.aspx" />
-    <Content Include="GetVoters.aspx" />
+    <Content Include="ViewCandidates.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -134,7 +133,11 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Home.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
     <Content Include="images\ElectionBackground1.jpg" />
+    <Content Include="images\logo.jpg" />
     <Content Include="images\signup.jpg" />
     <Content Include="images\Voter login.png" />
     <Content Include="images\Admin login.png" />
@@ -193,11 +196,11 @@
     <Compile Include="Admin Page.aspx.designer.cs">
       <DependentUpon>Admin Page.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\Admin Login.aspx.cs">
+    <Compile Include="Admin Login.aspx.cs">
       <DependentUpon>Admin Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Start\Admin Login.aspx.designer.cs">
+    <Compile Include="Admin Login.aspx.designer.cs">
       <DependentUpon>Admin Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -208,19 +211,19 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\Voter Login.aspx.cs">
+    <Compile Include="Voter Login.aspx.cs">
       <DependentUpon>Voter Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Start\Voter Login.aspx.designer.cs">
+    <Compile Include="Voter Login.aspx.designer.cs">
       <DependentUpon>Voter Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Voter SignUp.aspx.cs">
+    <Compile Include="Voter SignUp.aspx.cs">
       <DependentUpon>Voter SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Start\Voter SignUp.aspx.designer.cs">
+    <Compile Include="Voter SignUp.aspx.designer.cs">
       <DependentUpon>Voter SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="CandidateList.aspx.cs">
@@ -244,19 +247,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GetCandidates.aspx.cs">
-      <DependentUpon>GetCandidates.aspx</DependentUpon>
+    <Compile Include="ViewCandidates.aspx.cs">
+      <DependentUpon>ViewCandidates.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GetCandidates.aspx.designer.cs">
-      <DependentUpon>GetCandidates.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GetVoters.aspx.cs">
-      <DependentUpon>GetVoters.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GetVoters.aspx.designer.cs">
-      <DependentUpon>GetVoters.aspx</DependentUpon>
+    <Compile Include="ViewCandidates.aspx.designer.cs">
+      <DependentUpon>ViewCandidates.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -7,7 +7,7 @@
             
             <td align="center" style="height: 32px">
                 <br />
-                <img alt="" src="../images/Admin%20login.png" style="width: 100px; height: 87px" /><br />
+                <img alt="" src="images/Admin%20login.png" style="width: 100px; height: 87px" /><br />
                 <br />
                 
                 Admin Login<br />
@@ -20,7 +20,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="height: 27px; width: 147px">&nbsp;&nbsp; Password</td>
+                        <td style="height: 30px; width: 147px">&nbsp;&nbsp; Password</td>
                         <td align="left"style="height: 27px">
                             <asp:TextBox ID="txtApassword" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtApassword" ErrorMessage="pls enter Password"></asp:RequiredFieldValidator>

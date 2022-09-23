@@ -15,13 +15,13 @@ namespace OnlineVo.UI
     {
 
         /// <summary>
-        /// CandidateList_Button control.
+        /// ViewCandidates_Button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CandidateList_Button;
+        protected global::System.Web.UI.WebControls.LinkButton ViewCandidates_Button;
 
         /// <summary>
         /// Vote_Button control.

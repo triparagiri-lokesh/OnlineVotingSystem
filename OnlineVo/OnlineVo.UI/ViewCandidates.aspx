@@ -1,10 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GetCandidates.aspx.cs" Inherits="OnlineVo.UI.GetCandidate" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ViewCandidates.aspx.cs" Inherits="OnlineVo.UI.GetCandidate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
+     <br />
+     <legend align="center">Add Candidate
+   
     <table align="center" style="width: 50%">
         <tr>
             <td style="height: 138px">
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Candidate_no" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Candidate_no" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="311px" Width="545px">
                     <Columns>
                         <asp:BoundField DataField="Candidate_no" HeaderText="Candidate_no" ReadOnly="True" SortExpression="Candidate_no" />
                         <asp:BoundField DataField="Candidate_name" HeaderText="Candidate_name" SortExpression="Candidate_name" />
@@ -23,10 +25,11 @@
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Onlinevotingconn %>" SelectCommand="SELECT [Candidate_no], [Candidate_name], [Party_name] FROM [Candidate]"></asp:SqlDataSource>
                 <br />
 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
 
                 <asp:LinkButton ID="Getcadidatelinkbutton" runat="server" OnClick="Getcadidatelinkbutton_Click">Go to back</asp:LinkButton>
             </td>
         </tr>
     </table>
+      </legend>
 </asp:Content>

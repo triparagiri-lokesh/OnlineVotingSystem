@@ -15,10 +15,6 @@ namespace OnlineVo.UI
 
         }
 
-        protected void CandidateList_Button_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("GetCandidates.aspx");
-        }
 
         protected void Vote_Button_Click(object sender, EventArgs e)
         {
@@ -35,6 +31,11 @@ namespace OnlineVo.UI
         protected void VoteView_Button_Click(object sender, EventArgs e)
         {
             Response.Redirect("View Vote");
+        }
+
+        protected void ViewCandidates_Button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewCandidates.aspx");
         }
     }
 }
